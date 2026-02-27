@@ -2,12 +2,11 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unidad 3 - En mantenimiento</title>
+    <title>Unidad 3 | Portafolio</title>
 
-    <!-- CSS -->
+    <!-- CSS (mismo que unidad 1 y 2) -->
+    <link rel="stylesheet" href="style/unidad3.css">
     <link rel="stylesheet" href="style/home.css">
-    <link rel="stylesheet" href="style/mantenimiento.css">
 </head>
 <body>
 
@@ -28,17 +27,87 @@
 
 <!-- CONTENIDO -->
 <main class="center-box">
-    <h1 class="neon">Página en mantenimiento</h1>
-    <p class="subtitle">
-        Esta sección se encuentra actualmente en desarrollo.<br>
-        Próximamente estará disponible.
-    </p>
 
-    <div class="maintenance-icon">⚙️</div>
+<h1 class="neon">Frameworks y Desarrollo de APIs</h1>
+
+<section class="info-cards">
+<div class="card-info big-card">
+
+<h2 class="unit-title">Saber 3</h2>
+
+<img src="img/apii.png" class="unit-img" alt="Desarrollo de APIs">
+
+<p class="unit-desc">
+En esta unidad se estudian los frameworks utilizados para el desarrollo
+de interfaces de programación de aplicaciones (APIs), así como el proceso
+necesario para su correcta implementación en aplicaciones orientadas a servicios.
+</p>
+
+<hr class="divider">
+
+<h4>1. Frameworks para el desarrollo de APIs</h4>
+<img src="img/redds.png" class="unit-img small" alt="Frameworks">
+
+<p>
+Un framework es un conjunto de herramientas y librerías que facilitan
+la creación de aplicaciones estructuradas, seguras y escalables.
+</p>
+
+<h5>Frameworks más utilizados</h5>
+<ul>
+<li><strong>Express.js:</strong> Framework ligero para Node.js ideal para APIs REST.</li>
+<li><strong>Django REST Framework:</strong> Extensión de Django para crear APIs seguras en Python.</li>
+<li><strong>Spring Boot:</strong> Framework de Java ampliamente utilizado en sistemas empresariales.</li>
+<li><strong>Laravel:</strong> Framework PHP que permite desarrollar APIs con estructura clara.</li>
+</ul>
+
+<hr class="divider">
+
+<h4>2. Desarrollo de una Interfaz de Programación de Aplicaciones (API)</h4>
+<img src="img/redss.png" class="unit-img small" alt="Redes Sociales">
+
+<p>
+Una API permite que diferentes sistemas se comuniquen entre sí
+mediante peticiones HTTP.
+</p>
+
+<h5>Proceso de desarrollo de una API</h5>
+
+<ul>
+<li><strong>Definir el propósito:</strong> Determinar qué problema resolverá la API.</li>
+<li><strong>Diseñar endpoints:</strong> Crear las rutas (ejemplo: GET /usuarios).</li>
+<li><strong>Seleccionar métodos HTTP:</strong> GET, POST, PUT, DELETE.</li>
+<li><strong>Conectar base de datos:</strong> Almacenar y recuperar información.</li>
+<li><strong>Implementar seguridad:</strong> Autenticación y autorización.</li>
+<li><strong>Realizar pruebas:</strong> Usar herramientas como Postman.</li>
+<li><strong>Documentar:</strong> Explicar cómo usar la API correctamente.</li>
+</ul>
+
+<hr class="divider">
+
+<h4>Identificación solicitada</h4>
+<img src="img/reeds.png" class="unit-img small" alt="Redes Sociales">
+<p>
+Los frameworks permiten organizar el desarrollo de aplicaciones orientadas
+a servicios, ofreciendo herramientas para el manejo de rutas, seguridad,
+validación y conexión con bases de datos.
+</p>
+
+<p>
+El proceso de desarrollo de una API incluye planificación, diseño,
+implementación, pruebas y documentación, garantizando que la
+interfaz sea funcional, segura y escalable.
+</p>
+
+</div>
+</section>
+
 </main>
 
-<!-- BOTÓN VOLVER -->
-<div class="bottom-back">
+<!-- BOTONES INFERIORES -->
+<div class="buttons-group">
+    <a href="pdf/saber_hacer5.pdf" class="btn secondary" target="_blank">Saber Hacer 5</a>
+    <a href="pdf/saber_hacer6.pdf" class="btn secondary" target="_blank">Saber Hacer 6</a>
     <a href="actividades.html" class="btn secondary">Volver a Actividades</a>
 </div>
 
@@ -46,11 +115,9 @@
 <script>
 (function(){
     const canvas = document.getElementById('c1');
-    if (!canvas) return;
-    
     const ctx = canvas.getContext('2d');
     let w, h;
-    
+
     function resize(){
         w = canvas.width = window.innerWidth;
         h = canvas.height = window.innerHeight;
